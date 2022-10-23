@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb://localhost:27017/todolistDBv2');
+mongoose.connect('mongodb+srv://alex-admin:Z45z45z45-@cluster0.xkkigww.mongodb.net/todolistDBv2');
 
 // const items = ["Buy Food", "Cook Food", "Eat Food"];
 // const workItems = [];
@@ -134,7 +134,7 @@ app.get("/about", function(req, res){
 });
 
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
 	console.log("Server started on port 3000");
 });
 
