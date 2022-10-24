@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb+srv://alex-admin:Z45z45z45-@cluster0.xkkigww.mongodb.net/todolistDBv2');
+mongoose.connect('mongodb+srv://alex-admin:<password>@cluster0.xkkigww.mongodb.net/todolistDBv2');
 
 // const items = ["Buy Food", "Cook Food", "Eat Food"];
 // const workItems = [];
